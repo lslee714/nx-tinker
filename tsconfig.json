@@ -16,7 +16,8 @@
     "paths": {
       "@app-with-nx/test": ["libs/test/src/index.ts"],
       "@app-with-nx/hello": ["libs/hello/src/index.ts"],
-      "@app-with-nx/world": ["libs/world/src/index.ts"]
+      "@app-with-nx/world": ["libs/world/src/index.ts"],
+      "@app-with-nx/unrelated": ["libs/unrelated/src/index.ts"]
     },
     "rootDir": "."
   },

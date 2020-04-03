@@ -22,6 +22,16 @@
     },
     "world": {
       "tags": []
+    },
+    "unrelated": {
+      "tags": []
+    },
+    "another-app": {
+      "tags": []
+    },
+    "another-app-e2e": {
+      "tags": [],
+      "implicitDependencies": ["another-app"]
     }
   }
 }

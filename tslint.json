@@ -58,8 +58,12 @@
         "allow": [],
         "depConstraints": [
           {
-            "sourceTag": "*",
-            "onlyDependOnLibsWithTags": ["*"]
+            "sourceTag": "domain:app",
+            "onlyDependOnLibsWithTags": ["domain:explore"]
+          },
+          {
+            "sourceTag": "type:app",
+            "onlyDependOnLibsWithTags": ["type:feature"]
           }
         ]
       }

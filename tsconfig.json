@@ -14,6 +14,8 @@
     "typeRoots": ["node_modules/@types"],
     "lib": ["es2018", "dom"],
     "paths": {
+      "@app-with-nx/explore": ["libs/explore/src/index.ts"],
+      "@app-with-nx/explore/dataset": ["libs/explore/dataset/src/index.ts"]
     },
     "rootDir": "."
   },

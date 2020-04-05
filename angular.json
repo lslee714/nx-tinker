@@ -125,6 +125,62 @@
           }
         }
       }
+    },
+    "explore": {
+      "projectType": "library",
+      "root": "libs/explore",
+      "sourceRoot": "libs/explore/src",
+      "prefix": "app-with-nx",
+      "architect": {
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "libs/explore/tsconfig.lib.json",
+              "libs/explore/tsconfig.spec.json"
+            ],
+            "exclude": ["**/node_modules/**", "!libs/explore/**"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/explore/jest.config.js",
+            "tsConfig": "libs/explore/tsconfig.spec.json",
+            "passWithNoTests": true,
+            "setupFile": "libs/explore/src/test-setup.ts"
+          }
+        }
+      },
+      "schematics": {}
+    },
+    "explore-dataset": {
+      "projectType": "library",
+      "root": "libs/explore/dataset",
+      "sourceRoot": "libs/explore/dataset/src",
+      "prefix": "app-with-nx",
+      "architect": {
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "libs/explore/dataset/tsconfig.lib.json",
+              "libs/explore/dataset/tsconfig.spec.json"
+            ],
+            "exclude": ["**/node_modules/**", "!libs/explore/dataset/**"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/explore/dataset/jest.config.js",
+            "tsConfig": "libs/explore/dataset/tsconfig.spec.json",
+            "passWithNoTests": true,
+            "setupFile": "libs/explore/dataset/src/test-setup.ts"
+          }
+        }
+      },
+      "schematics": {}
     }
   },
   "defaultProject": "app-with-nx",

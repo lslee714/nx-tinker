@@ -9,8 +9,7 @@
   },
   "projects": {
     "app-with-nx": {
-      "tags": ["domain:app", "type:app"],
-      "implicitDependencies": ["another-app"]
+      "tags": ["domain:app", "type:app"]
     },
     "app-with-nx-e2e": {
       "tags": ["domain:app", "type:e2e"]
@@ -20,6 +19,9 @@
     },
     "explore-dataset": {
       "tags": ["domain:explore", "type:ui"]
+    },
+    "explore-compare": {
+      "tags": []
     }
   }
 }

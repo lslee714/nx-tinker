@@ -181,6 +181,34 @@
         }
       },
       "schematics": {}
+    },
+    "explore-compare": {
+      "projectType": "library",
+      "root": "libs/explore/compare",
+      "sourceRoot": "libs/explore/compare/src",
+      "prefix": "app-with-nx",
+      "architect": {
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "libs/explore/compare/tsconfig.lib.json",
+              "libs/explore/compare/tsconfig.spec.json"
+            ],
+            "exclude": ["**/node_modules/**", "!libs/explore/compare/**"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/explore/compare/jest.config.js",
+            "tsConfig": "libs/explore/compare/tsconfig.spec.json",
+            "passWithNoTests": true,
+            "setupFile": "libs/explore/compare/src/test-setup.ts"
+          }
+        }
+      },
+      "schematics": {}
     }
   },
   "defaultProject": "app-with-nx",

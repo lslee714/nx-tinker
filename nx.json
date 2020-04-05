@@ -9,29 +9,11 @@
   },
   "projects": {
     "app-with-nx": {
-      "tags": []
+      "tags": ["domain:app", "type:app"],
+      "implicitDependencies": ["another-app"]
     },
     "app-with-nx-e2e": {
-      "tags": []
-    },
-    "test": {
-      "tags": []
-    },
-    "hello": {
-      "tags": []
-    },
-    "world": {
-      "tags": []
-    },
-    "unrelated": {
-      "tags": []
-    },
-    "another-app": {
-      "tags": []
-    },
-    "another-app-e2e": {
-      "tags": [],
-      "implicitDependencies": ["another-app"]
+      "tags": ["domain:app", "type:e2e"]
     }
   }
 }

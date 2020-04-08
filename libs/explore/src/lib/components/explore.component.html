@@ -1,7 +1,7 @@
 <h1>Explore Lib</h1>
 <ul>
-  <li><a routerLink="dataset">Dataset</a></li>
-  <li><a routerLink="compare">Compare</a></li>
+  <li><a routerLink="dataset" (mouseover)="onLinkMouseOver('dataset')">Dataset</a></li>
+  <li><a routerLink="compare" (mouseover)="onLinkMouseOver('compare')">Compare</a></li>
 </ul>
 
 <router-outlet></router-outlet>
